@@ -129,25 +129,3 @@ The agent will then:
 | `dotenv` | Loads `.env` variables into `process.env` |
 
 ---
-
-## 🔒 Security Notes
-
-- Your `GEMINI_API_KEY` is **never hardcoded** — it lives only in `.env`
-- `.env` is listed in `.gitignore` and will never be committed
-- The scraper uses a realistic browser `User-Agent` header to avoid bot-blocking
-- If scraping fails, the agent gracefully falls back to knowledge-based generation
-
----
-
-## 💡 Tips
-
-- Works with most public websites (Scaler, Stripe, Notion, GitHub, etc.)
-- If a site blocks scraping, the agent still generates a knowledge-based clone
-- Generated files are named after the domain (e.g. `scaler_clone.html`)
-- Type `exit` or `quit` to stop the CLI
-
----
-
-## 📄 License
-
-ISC
