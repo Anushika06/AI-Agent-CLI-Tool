@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded', () => { console.log('Scaler clone loaded'); const navToggle = document.querySelector('.menu-toggle'); if(navToggle) { navToggle.addEventListener('click', () => { document.querySelector('nav').classList.toggle('active'); }); } });
